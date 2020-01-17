@@ -1,4 +1,47 @@
+# react-gottani-template
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## What is "gottani"
+
+**ごった煮[gottani]**
+
+(n) various foods cooked together,hodgepodge,hotchpotch,mulligan stew
+
+## Features
+
+- TypeScript (strict: true)
+- React Router
+- React Redux (using Ducks pattern)
+- Storybook
+- CSS Module, SASS Samples (`*.module.scss` is used in the code)
+- stylelint (auto linting, format *.css, *.scss files on save)
+- Typesafe enviroment variables settings (Please refer to `enviroments.ts`)
+- Normalize.css
+- VSCode debugger settings
+- `React.StrictMode` settings
+- Analyzer JavaScript code bloat through source maps (using `source-map-explorer`)
+- CI task config on GitHub Actions (Please refer to `/.github/workflows/ci.yml`)
+
+## Recommend VSCode Extensions
+
+- [stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)
+- [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
+- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [TSLint](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-tslint-plugin)
+
+## Features added in the future
+
+- Add redux-saga/redux-thunk
+- Add test code (redux)
+- Add easy to read sample code
+- Add typesafe http client (aspidajs)
+
+## How to debug on Chrome
+
+1. Launch chrome from Vscode debug page
+2. Exec `yarn start`
+3. Happy debugging (You can use break point on VSCoce)
 
 ## Available Scripts
 
@@ -37,8 +80,26 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+### `yarn stylelint`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The stylelint check *.css, *.scss files.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### `yarn storybook`
+
+The Storybook launches on the browser.
+
+### `yarn build-storybook`
+
+The Storybook is built.
+
+### `yarn analyze`
+
+Analyze JavaScript code bloat through source maps.
+
+### `yarn test:no-watch`
+
+Launches the test runner in the NOT interactive watch mode.
+
+### `test:coverage`
+
+Displays the coverage rate of the test.
