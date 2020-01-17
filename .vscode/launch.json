@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    // http://babywkb.hatenablog.com/entry/2018/03/03/001330
+    {
+      "name": "Chrome",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceRoot}/src"
+    }
+  ]
+}
