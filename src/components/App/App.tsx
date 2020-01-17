@@ -1,6 +1,6 @@
-import React from 'react';
-import logo from '../../assets/images/logo.svg';
-import styles from './App.module.scss';
+import React from "react";
+import logo from "../../assets/images/logo.svg";
+import styles from "./App.module.scss";
 
 const App: React.FC = () => {
   return (
@@ -9,6 +9,6 @@ const App: React.FC = () => {
       <img src={logo} alt="logo" />
     </div>
   );
-}
+};
 
 export default App;

@@ -1,9 +1,36 @@
 {
   "editor.tabSize": 2,
 
+  // disable default validator
+  "css.validate": false,
+  "scss.validate": false,
+
   // https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint
   "[scss]": {
     "editor.codeActionsOnSave": {
-    "source.fixAll.stylelint": true
-  }
+      "source.fixAll.stylelint": true
+    }
+  },
+
+  // https://tech-1natsu.hatenablog.com/entry/2018/11/10/231855
+  "[javascript]": {
+    "editor.formatOnSave": true
+  },
+  "[typescript]": {
+    "editor.formatOnSave": true
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": true
+  },
+  "[typescriptreact]": {
+    "editor.formatOnSave": true
+  },
+
+  // eslint
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
 }
