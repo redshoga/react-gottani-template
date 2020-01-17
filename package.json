@@ -19,7 +19,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "stylelint": "stylelint \"**/*.(css|scss)\""
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -38,6 +39,7 @@
   },
   "devDependencies": {
     "node-sass": "^4.13.1",
+    "stylelint": "^13.0.0",
     "stylelint-config-standard": "^19.0.0"
   }
 }
