@@ -36,6 +36,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Add test code (redux)
 - Add easy to read sample code
 - Add typesafe http client (aspidajs)
+- Add redux logger, developer tools
 
 ## How to debug on Chrome
 
