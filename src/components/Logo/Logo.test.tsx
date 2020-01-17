@@ -4,6 +4,6 @@ import { Logo } from "./Logo";
 
 test("renders learn react link", () => {
   const { getByText } = render(<Logo />);
-  const linkElement = getByText(/Hello/i);
+  const linkElement = getByText(/Hello A/i);
   expect(linkElement).toBeInTheDocument();
 });
