@@ -1,11 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./assets/styles/global.scss";
-import { App } from "./router";
 import * as serviceWorker from "./serviceWorker";
 import { validateEnviroments } from "./enviroments";
+import { Provider } from "react-redux";
+import { store } from "./modules";
+import { Router } from "./router";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(
+  <Provider store={store}>
+    <Router />
+  </Provider>,
+  document.getElementById("root")
+);
 
 validateEnviroments();
 
