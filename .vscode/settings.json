@@ -1,0 +1,9 @@
+{
+  "editor.tabSize": 2,
+
+  // https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint
+  "[scss]": {
+    "editor.codeActionsOnSave": {
+    "source.fixAll.stylelint": true
+  }
+}
