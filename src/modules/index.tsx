@@ -4,6 +4,7 @@ import { createStore, combineReducers, applyMiddleware } from "redux";
 import createSagaMiddleware from "redux-saga";
 import { sagas as postsSagas } from "./Posts.saga";
 import { all } from "redux-saga/effects";
+import { composeWithDevTools } from "redux-devtools-extension";
 
 const sagaMiddleware = createSagaMiddleware();
 
@@ -29,7 +30,8 @@ export const actionCreator = {
 
 export const store = createStore(
   combineReducers<RootState>(reducers),
-  applyMiddleware(sagaMiddleware)
+  // https://github.com/zalmoxisus/redux-devtools-extension#usage
+  composeWithDevTools(applyMiddleware(sagaMiddleware))
 );
 
 // https://github.com/redux-saga/redux-saga/issues/160

@@ -22,6 +22,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Normalize.css
 - VSCode debugger settings
 - `React.StrictMode` settings
+- Redux dev tools ([redux-devtools-extension](https://github.com/reduxjs/redux-devtools))
 - Analyzer JavaScript code bloat through source maps (using `source-map-explorer`)
 - CI task config on GitHub Actions (Please refer to `/.github/workflows/ci.yml`)
 
@@ -32,11 +33,14 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - [TSLint](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-tslint-plugin)
 
+## Recommend Chrome Extensions
+
+- [Redux DevTools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=ja)
+
 ## Features added in the future
 
 - Add test code (redux)
 - Add easy to read sample code
-- Add redux logger, developer tools
 
 ## How to debug on Chrome
 
