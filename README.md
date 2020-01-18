@@ -13,6 +13,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - TypeScript (strict: true)
 - React Router
 - React Redux (using Ducks pattern)
+- Redux-Saga
 - Storybook
 - CSS Module, SASS Samples (`*.module.scss` is used in the code)
 - stylelint (auto linting, format *.css, *.scss files on save)
@@ -32,7 +33,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Features added in the future
 
-- Add redux-saga/redux-thunk
 - Add test code (redux)
 - Add easy to read sample code
 - Add typesafe http client (aspidajs)
