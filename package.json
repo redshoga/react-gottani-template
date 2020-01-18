@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@aspida/axios": "^0.1.1",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -33,7 +34,8 @@
     "build-storybook": "build-storybook -s public",
     "analyze": "source-map-explorer 'build/static/js/*.js'",
     "test:no-watch": "react-scripts test --watchAll=false",
-    "test:coverage": "npm test -- --coverage --watchAll=false"
+    "test:coverage": "npm test -- --coverage --watchAll=false",
+    "api:build": "aspida --build"
   },
   "eslintConfig": {
     "extends": "react-app"

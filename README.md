@@ -15,6 +15,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - React Redux (using Ducks pattern)
 - Redux-Saga
 - Storybook
+- Typesafe HTTP client ([aspida](https://github.com/aspidajs/aspida/tree/master/packages/aspida))
 - CSS Module, SASS Samples (`*.module.scss` is used in the code)
 - stylelint (auto linting, format *.css, *.scss files on save)
 - Typesafe enviroment variables settings (Please refer to `enviroments.ts`)
@@ -35,7 +36,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 - Add test code (redux)
 - Add easy to read sample code
-- Add typesafe http client (aspidajs)
 - Add redux logger, developer tools
 
 ## How to debug on Chrome
@@ -101,6 +101,11 @@ Analyze JavaScript code bloat through source maps.
 
 Launches the test runner in the NOT interactive watch mode.
 
-### `test:coverage`
+### `yarn test:coverage`
 
 Displays the coverage rate of the test.
+
+### `yarn api:build`
+
+API type definition file 'apis/$api.ts' will be generated.<br />
+https://github.com/aspidajs/aspida/tree/master/packages/aspida

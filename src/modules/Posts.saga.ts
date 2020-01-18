@@ -1,12 +1,23 @@
 import { call, put, takeEvery } from "redux-saga/effects";
-import axios from "axios";
 import { Post, actionCreator, FETCH_POSTS } from "./Posts";
 
+// import axios from "axios";
+
+import aspida from "@aspida/axios";
+import api from "../apis/$api";
+
+const client = api(aspida());
+
 const fetchPostsWithClient: () => Promise<Post[]> = async () => {
-  const res = await axios.get<Post[]>(
-    "https://jsonplaceholder.typicode.com/posts"
-  );
-  return res.data;
+  // // Normal axios
+  // const res = await axios.get<Post[]>(
+  //   "https://jsonplaceholder.typicode.com/posts"
+  // );
+  // return res.data;
+
+  // Axios with aspida
+  // more details: https://github.com/aspidajs/aspida
+  return client.posts.$get();
 };
 
 const fetchPosts = function*() {
