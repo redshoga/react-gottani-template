@@ -1,10 +1,16 @@
 import React from "react";
 
-type Props = {
+export type Props = {
   counter: number;
   increment: () => void;
   decrement: () => void;
 };
+
+export enum TestAttr {
+  Counter = "Counter",
+  IncrementButton = "IncrementButton",
+  DecrementButton = "DecrementButton"
+}
 
 export class Counter extends React.Component<Props> {
   render() {
@@ -12,12 +18,16 @@ export class Counter extends React.Component<Props> {
     return (
       <>
         <div>
-          <button onClick={increment}>increment</button>
+          <button data-test={TestAttr.IncrementButton} onClick={increment}>
+            increment
+          </button>
         </div>
         <div>
-          <button onClick={decrement}>decrement</button>
+          <button data-test={TestAttr.DecrementButton} onClick={decrement}>
+            decrement
+          </button>
         </div>
-        count: {counter}
+        count: <span data-test={TestAttr.Counter}>{counter}</span>
       </>
     );
   }

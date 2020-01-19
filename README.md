@@ -15,6 +15,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - React Redux (using Ducks pattern)
 - Redux-Saga
 - Storybook
+- Jest + Enzyme component tests
 - Typesafe HTTP client ([aspida](https://github.com/aspidajs/aspida/tree/master/packages/aspida))
 - CSS Module, SASS Samples (`*.module.scss` is used in the code)
 - stylelint (auto linting, format *.css, *.scss files on save)
@@ -40,7 +41,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Features added in the future
 
 - Add test code (redux)
-- Add easy to read sample code
 
 ## How to debug on Chrome
 
