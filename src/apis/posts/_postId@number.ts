@@ -1,4 +1,4 @@
-import { Post } from ".";
+import { Post } from "../../models/Post";
 
 export interface Methods {
   get: {

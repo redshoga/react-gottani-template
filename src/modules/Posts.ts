@@ -1,4 +1,5 @@
 import { Action } from "redux";
+import { Post } from "../models/Post";
 
 // action types
 export const FETCH_POSTS = "FETCH_POSTS";
@@ -44,12 +45,6 @@ export const actionCreator = {
 };
 
 // state
-export interface Post {
-  userId: number;
-  id: number;
-  title: string;
-  body: string;
-}
 export interface State {
   posts: Post[];
   loadingPosts: boolean;

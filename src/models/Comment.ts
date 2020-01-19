@@ -5,9 +5,3 @@ export interface Comment {
   email: string;
   body: string;
 }
-
-export interface Methods {
-  get: {
-    resData: Comment[];
-  };
-}

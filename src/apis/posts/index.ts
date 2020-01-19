@@ -1,9 +1,4 @@
-export interface Post {
-  userId: number;
-  id: number;
-  title: string;
-  body: string;
-}
+import { Post } from "../../models/Post";
 
 export interface Methods {
   get: {

@@ -1,8 +1,5 @@
 import React from "react";
-import {
-  mapStateToProps,
-  mapDispatchToProps
-} from "../../containers/PostsContainer";
+import { mapStateToProps, mapDispatchToProps } from "../../pages/PostsPage";
 
 type Props = ReturnType<typeof mapStateToProps> &
   ReturnType<typeof mapDispatchToProps>;

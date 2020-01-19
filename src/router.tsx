@@ -1,43 +1,32 @@
 import React from "react";
-import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { Logo } from "./components/Logo/Logo";
-import { CounterContainer } from "./containers/CounterContainer";
-import { PostsContainer } from "./containers/PostsContainer";
+import { ROUTES } from "./constants/routes";
+
+// pages
+import { CounterPage } from "./pages/CounterPage";
+import { PostsPage } from "./pages/PostsPage";
+import { DefaultLayout } from "./layouts/DefaultLayout";
 
 export const Router = () => {
   return (
     <BrowserRouter>
-      <div>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/counter">Counter</Link>
-        </li>
-        <li>
-          <Link to="/logo">ReactLogo</Link>
-        </li>
-        <li>
-          <Link to="/posts">Posts</Link>
-        </li>
-
-        <hr />
-
+      <DefaultLayout>
         <Switch>
-          <Route exact path="/">
+          <Route exact path={ROUTES.ROOT}>
             <Home />
           </Route>
-          <Route path="/counter">
-            <CounterContainer />
+          <Route path={ROUTES.COUNTER}>
+            <CounterPage />
           </Route>
-          <Route path="/logo">
+          <Route path={ROUTES.LOGO}>
             <Logo />
           </Route>
-          <Route path="/posts">
-            <PostsContainer />
+          <Route path={ROUTES.POSTS}>
+            <PostsPage />
           </Route>
         </Switch>
-      </div>
+      </DefaultLayout>
     </BrowserRouter>
   );
 };
@@ -45,7 +34,12 @@ export const Router = () => {
 const Home = () => {
   return (
     <div>
-      <h1>Home</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab reiciendis
+        ipsum enim inventore perspiciatis! Quibusdam voluptatem maiores ullam
+        commodi officia at inventore nemo libero illum. Excepturi tenetur enim
+        qui dicta?
+      </p>
     </div>
   );
 };

@@ -17,7 +17,7 @@ const mapDispatchToProps = (dispatch: Dispatch<Action>) => {
   };
 };
 
-export const CounterContainer = connect(
+export const CounterPage = connect(
   mapStateToProps,
   mapDispatchToProps
 )(Counter);

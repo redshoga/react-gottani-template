@@ -1,5 +1,6 @@
 import { call, put, takeEvery } from "redux-saga/effects";
-import { Post, actionCreator, FETCH_POSTS } from "./Posts";
+import { actionCreator, FETCH_POSTS } from "./Posts";
+import { Post } from "../models/Post";
 
 // import axios from "axios";
 

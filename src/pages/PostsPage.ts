@@ -18,7 +18,7 @@ export const mapDispatchToProps = (dispatch: Dispatch<Action>) => {
   };
 };
 
-export const PostsContainer = connect(
+export const PostsPage = connect(
   mapStateToProps,
   mapDispatchToProps
 )(PostsViewer);
