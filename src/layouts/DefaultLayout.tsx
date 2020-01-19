@@ -1,12 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { ROUTES } from "../constants/routes";
+import styles from "./DefaultLayout.module.scss";
 
 export const DefaultLayout: React.FC = ({ children }) => {
   return (
-    <>
+    <div className={styles.container}>
+      <h1>react-gottani-template</h1>
+
       <section>
-        <h1>Menu</h1>
+        <h2>Menu</h2>
         <li>
           <Link to={ROUTES.ROOT}>Home</Link>
         </li>
@@ -24,9 +27,9 @@ export const DefaultLayout: React.FC = ({ children }) => {
       <hr />
 
       <section>
-        <h1>Content</h1>
+        <h2>Content</h2>
         <main>{children}</main>
       </section>
-    </>
+    </div>
   );
 };
