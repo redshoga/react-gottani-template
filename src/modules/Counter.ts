@@ -1,26 +1,28 @@
 import { Action } from "redux";
 
 // action types
-const INCREMENT = "COUNTER_INCREMENT";
-const DECREMENT = "COUNTER_DECREMENT";
+export const ActionTypeName = {
+  INCREMENT: "Counter/INCREMENT",
+  DECREMENT: "Counter/DECREMENT"
+};
 
 interface IncrementAction extends Action {
-  type: typeof INCREMENT;
+  type: typeof ActionTypeName.INCREMENT;
 }
 
 interface DecrementAction extends Action {
-  type: typeof DECREMENT;
+  type: typeof ActionTypeName.DECREMENT;
 }
 
 export type ActionTypes = IncrementAction | DecrementAction;
 
 // action creator
 const increment: () => ActionTypes = () => {
-  return { type: INCREMENT };
+  return { type: ActionTypeName.INCREMENT };
 };
 
 const decrement: () => ActionTypes = () => {
-  return { type: DECREMENT };
+  return { type: ActionTypeName.DECREMENT };
 };
 
 export const actionCreator = {
@@ -39,12 +41,12 @@ export const initialState: State = {
 // reducer
 export function reducer(state = initialState, action: ActionTypes): State {
   switch (action.type) {
-    case INCREMENT:
+    case ActionTypeName.INCREMENT:
       return {
         ...state,
         count: state.count + 1
       };
-    case DECREMENT:
+    case ActionTypeName.DECREMENT:
       return {
         ...state,
         count: state.count - 1

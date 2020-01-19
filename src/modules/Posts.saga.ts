@@ -1,5 +1,5 @@
 import { call, put, takeEvery } from "redux-saga/effects";
-import { actionCreator, FETCH_POSTS } from "./Posts";
+import { actionCreator, ActionTypeName } from "./Posts";
 import { Post } from "../models/Post";
 
 // import axios from "axios";
@@ -30,4 +30,4 @@ const fetchPosts = function*() {
   }
 };
 
-export const sagas = [takeEvery(FETCH_POSTS, fetchPosts)];
+export const sagas = [takeEvery(ActionTypeName.FETCH_POSTS, fetchPosts)];
