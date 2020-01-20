@@ -26,6 +26,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Redux dev tools ([redux-devtools-extension](https://github.com/reduxjs/redux-devtools))
 - Analyzer JavaScript code bloat through source maps (using `source-map-explorer`)
 - CI task config on GitHub Actions (Please refer to `/.github/workflows/ci.yml`)
+- Reducer snapshot test (using [reducer-tester](https://github.com/akameco/reducer-tester))
 
 ## Recommend VSCode Extensions
 
@@ -37,10 +38,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Recommend Chrome Extensions
 
 - [Redux DevTools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=ja)
-
-## Features added in the future
-
-- Add test code (redux)
 
 ## How to debug on Chrome
 

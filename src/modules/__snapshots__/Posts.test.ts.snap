@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Counter Posts/FETCH_POSTS 1`] = `
+Snapshot Diff:
+- Before
++ After
+
+  Object {
+    "fetchFailed": false,
+-   "loadingPosts": false,
++   "loadingPosts": true,
+    "posts": Array [],
+  }
+`;
+
+exports[`Counter Posts/POSTS_FETCH_FAILED 1`] = `
+Snapshot Diff:
+- Before
++ After
+
+  Object {
+-   "fetchFailed": false,
++   "fetchFailed": true,
+    "loadingPosts": false,
+    "posts": Array [],
+  }
+`;
+
+exports[`Counter Posts/SET_POSTS 1`] = `
+Snapshot Diff:
+- Before
++ After
+
+  Object {
+    "fetchFailed": false,
+    "loadingPosts": false,
+-   "posts": Array [],
++   "posts": Array [
++     Object {
++       "body": "body test1",
++       "id": 1,
++       "title": "hello post1",
++       "userId": 1,
++     },
++     Object {
++       "body": "body test2",
++       "id": 2,
++       "title": "hello post2",
++       "userId": 2,
++     },
++   ],
+  }
+`;
+
+exports[`Counter handle initial state 1`] = `
+Snapshot Diff:
+Compared values have no visual difference.
+`;

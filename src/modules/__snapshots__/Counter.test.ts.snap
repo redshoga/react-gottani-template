@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Counter Counter/DECREMENT 1`] = `
+Snapshot Diff:
+- Before
++ After
+
+  Object {
+-   "count": 123,
++   "count": 122,
+  }
+`;
+
+exports[`Counter Counter/INCREMENT 1`] = `
+Snapshot Diff:
+- Before
++ After
+
+  Object {
+-   "count": 123,
++   "count": 124,
+  }
+`;
+
+exports[`Counter handle initial state 1`] = `
+Snapshot Diff:
+Compared values have no visual difference.
+`;

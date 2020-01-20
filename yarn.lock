@@ -8367,7 +8367,7 @@ jest-serializer@^24.9.0:
   resolved "https://registry.yarnpkg.com/jest-serializer/-/jest-serializer-24.9.0.tgz#e6d7d7ef96d31e8b9079a714754c5d5c58288e73"
   integrity sha512-DxYipDr8OvfrKH3Kel6NdED3OXxjvxXZ1uIY2I9OFbGg+vUkkg7AGvi65qbhbWNPvDckXmzMPbK3u3HaDO49bQ==
 
-jest-snapshot@^24.9.0:
+jest-snapshot@^24.0.0, jest-snapshot@^24.9.0:
   version "24.9.0"
   resolved "https://registry.yarnpkg.com/jest-snapshot/-/jest-snapshot-24.9.0.tgz#ec8e9ca4f2ec0c5c87ae8f925cf97497b0e951ba"
   integrity sha512-uI/rszGSs73xCM0l+up7O7a40o90cnrk429LOiK3aeTvfC0HHmldbd81/B7Ix81KSFe1lwkbl7GnBGG4UfuDew==
@@ -12177,6 +12177,14 @@ redent@^3.0.0:
     indent-string "^4.0.0"
     strip-indent "^3.0.0"
 
+reducer-tester@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/reducer-tester/-/reducer-tester-1.1.2.tgz#fbd4a487b98ab2a0621c44f4671852ee939904bf"
+  integrity sha512-Fz0ycyKD6yT1BFQ2c3sOxsUXsbiX7hcs0VhpGH6KDOaiDea+jNeD9WhSgPkDJ9M9gMphogUTJBEl0GG2TKUTEA==
+  dependencies:
+    invariant "^2.2.4"
+    snapshot-diff "^0.5.1"
+
 redux-devtools-extension@^2.13.8:
   version "2.13.8"
   resolved "https://registry.yarnpkg.com/redux-devtools-extension/-/redux-devtools-extension-2.13.8.tgz#37b982688626e5e4993ff87220c9bbb7cd2d96e1"
@@ -13071,6 +13079,16 @@ snapdragon@^0.8.1:
     source-map "^0.5.6"
     source-map-resolve "^0.5.0"
     use "^3.1.0"
+
+snapshot-diff@^0.5.1:
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/snapshot-diff/-/snapshot-diff-0.5.2.tgz#4b3d9fa74d908c629882ee625f0dba1e1239d9a4"
+  integrity sha512-6cKemS91iEZCRRHQUjYBcPMIUz70lqWVoffqx7nhZ2XP/tG+EJKK0O8tANW0zHcmaEOfu00cfzKhsg08QdC9fg==
+  dependencies:
+    jest-diff "^24.0.0"
+    jest-snapshot "^24.0.0"
+    pretty-format "^24.0.0"
+    strip-ansi "^5.0.0"
 
 sockjs-client@1.4.0:
   version "1.4.0"

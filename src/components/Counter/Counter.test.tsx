@@ -3,7 +3,7 @@ import { shallow, ShallowWrapper } from "enzyme";
 import { Counter, Props, TestAttr } from "./Counter";
 import { select } from "../../testUtils";
 
-describe("Counter", () => {
+describe("<Counter />", () => {
   const mockProps: Props = {
     counter: 123,
     increment: jest.fn(),
