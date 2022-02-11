@@ -69,7 +69,7 @@
     "@types/redux-saga": "^0.10.5",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "reducer-tester": "^1.1.2",
     "stylelint": "^13.0.0",
     "stylelint-config-standard": "^19.0.0"
